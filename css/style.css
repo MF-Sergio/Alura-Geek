@@ -1,3 +1,54 @@
+:root {
+    --main-azul: #2A7AE4;
+    --main-cinza: #464646;
+    --main-branco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body, input {
     font-family: 'Raleway', sans-serif;
 }
+
+/*ESTILIZAÇÃO MOBILE(360px)*/
+
+/*Cabeçalho*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.444vw;
+    align-items: center;
+}
+
+.cabecalho__logo-imagem {
+    vertical-align: middle;
+}
+
+.cabecalho__login {
+    color: var(--main-azul);
+    width: 133px;
+    height: 40px;
+    padding: 12px 47.5px;
+    font-size: 0.88em;
+    border: solid 1px var(--main-azul);
+}
+
+.cabecalho__pesquisa {
+    display: none;
+    color: var(--main-cinza);
+    width: 272px;
+    height: 40px;
+    padding: 8px 16px;
+    background: #F5F5F5;
+    border-radius: 20px;
+}
+
+.cabecalho__pesquisa::placeholder {
+    text-align: center;
+    color: #A2A2A2;
+}
+/***/
+
+/**********/
