@@ -67,4 +67,30 @@ body, input {
 
 /***/
 
+/*Banner*/
+.banner {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 192px;
+    padding: 16px;
+    color: var(--main-branco);
+    font-size: 14px;
+}
+
+.banner__titulo {
+    font-size: 22px;
+}
+
+.banner__botao {
+    padding: 12px 16px;
+    width: fit-content;
+    background-color: var(--main-azul);
+}
+
+
 /**********/
