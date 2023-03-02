@@ -92,5 +92,58 @@ body, input {
     background-color: var(--main-azul);
 }
 
+/*Produtos*/
+.produtos {
+    padding: 1em;
+}
 
+.produtos__titulo {
+    display: inline;
+    color: var(--main-cinza);
+    font-weight: 700;
+    font-size: 1.34em;
+}
+
+.produtos__ver-tudo {
+    color: var(--main-azul);
+    font-weight: 700;
+    font-size: 0.87em;
+    margin-left: 45.4%;
+}
+
+.produtos__ver-tudo::after {
+    content: url(../img/seta.svg);
+    vertical-align: middle;
+    padding-left: 6px;
+}
+
+.produtos__lista {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.lista__item {
+    display: grid;
+    gap: 8px;
+}
+
+.item__titulo {
+    color: var(--main-cinza);
+    font-size: 0.87em;
+}
+
+.item__preco, .item__link {
+    font-weight: 700;
+    color: var(--main-cinza);
+}
+
+.item__link {
+    font-weight: 700;
+    color: var(--main-azul);
+    font-size: 0.87em;
+}
+
+/***/
 /**********/
