@@ -37,7 +37,8 @@
 
  * <i>15/02/2023</i>: `(Página principal - mobile)` Todos os arquivos base(imagens,.html,.css,.js) adicionados ao projeto, estrutura completa da página criada, detalhes e classes adicionadas ao cabeçalho.
 <br>
- * <i>16/02/2023</i>: `(Página principal - mobile)` Estilização completa do cabeçalho da página utilizando flex container, criação da programação(JS) para mostrar e esconder o input de pesquisa da página(protótipo).
+  
+  * <i>16/02/2023</i>: `(Página principal - mobile)` Estilização completa do cabeçalho da página utilizando flex container, criação da programação(JS) para mostrar e esconder o input de pesquisa da página(protótipo).
 
 ## Deploy da página :dash:
 
