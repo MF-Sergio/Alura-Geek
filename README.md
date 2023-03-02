@@ -39,7 +39,9 @@
 <br>
   
   * <i>16/02/2023</i>: `(Página principal - mobile)` Estilização completa do cabeçalho da página utilizando flex container, criação da programação(JS) para mostrar e esconder o input de pesquisa da página(protótipo).
+<br>
 
+  * <i>02/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento das seções de produtos e do rodapé dentro do HTML e estilização das seções de "produtos" utilizando grid containers e espaçamentos padrões.
 ## Deploy da página :dash:
 
 >
