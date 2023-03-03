@@ -35,13 +35,16 @@
 
 ## Diário de desenvolvimento
 
- * <i>15/02/2023</i>: `(Página principal - mobile)` Todos os arquivos base(imagens,.html,.css,.js) adicionados ao projeto, estrutura completa da página criada, detalhes e classes adicionadas ao cabeçalho.
+ * <i>15/02/2023</i>: `(Página principal - mobile)` Todos os arquivos base(imagens,.html,.css,.js) adicionados ao projeto, estrutura básica da página criada, detalhes e classes adicionadas ao cabeçalho.
 <br>
   
   * <i>16/02/2023</i>: `(Página principal - mobile)` Estilização completa do cabeçalho da página utilizando flex container, criação da programação(JS) para mostrar e esconder o input de pesquisa da página(protótipo).
 <br>
 
-  * <i>02/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento das seções de produtos e do rodapé dentro do HTML e estilização das seções de "produtos" utilizando grid containers e espaçamentos padrões.
+  * <i>02/03/2023</i>: `(Página principal - mobile)` Organização e estruturação semântica de cada elemento das seções de produtos e do rodapé dentro do HTML e estilização das seções de "produtos" utilizando grid containers e espaçamentos padrões.
+<br>
+
+  * <i>03/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento do rodapé e correções do mesmo no HTML, e estilização completa do rodapé.
 ## Deploy da página :dash:
 
 >
