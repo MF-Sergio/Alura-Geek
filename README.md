@@ -42,6 +42,9 @@
 <br>
 
   * <i>02/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento das seções de produtos e do rodapé dentro do HTML e estilização das seções de "produtos" utilizando grid containers e espaçamentos padrões.
+<br>
+
+  * <i>03/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento do rodapé e correções do mesmo no HTML, e estilização completa do rodapé.
 ## Deploy da página :dash:
 
 >
