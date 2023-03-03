@@ -118,24 +118,24 @@
     </section>
     <footer class="rodape">
         <img src="img/logo.svg" alt="Logo da Alura Geek" class="rodape__logo">
-        <div>
-            <a href="#">Quem somos nós</a>
-            <a href="#">Política de privacidade</a>
-            <a href="#">Programa fidelidade</a>
-            <a href="#">Nossas lojas</a>
-            <a href="#">Quero ser franqueado</a>
-            <a href="#">Anuncie aqui</a>
+        <div class="rodape__ajuda">
+            <a href="#" class="ajuda__link">Quem somos nós</a>
+            <a href="#" class="ajuda__link">Política de privacidade</a>
+            <a href="#" class="ajuda__link">Programa fidelidade</a>
+            <a href="#" class="ajuda__link">Nossas lojas</a>
+            <a href="#" class="ajuda__link">Quero ser franqueado</a>
+            <a href="#" class="ajuda__link">Anuncie aqui</a>
         </div>
-        <form>
-            <h3>Fale conosco</h3>
-            <label for="">Nome</label>
-            <input type="text">
-            <input type="text" placeholder="Escreva sua mensagem">
-            <input type="button" value="Enviar mensagem">
+        <form class="rodape__formulario">
+            <h3 class="formulario__titulo">Fale conosco</h3>
+            <fieldset class="formulario__seu-nome">
+                <label for="seu-nome">Nome</label>
+                <input type="text" name="seu-nome">
+            </fieldset>
+            <textarea placeholder="Escreva sua mensagem" class="formulario__mensagem" rows="3"></textarea>
+            <input type="button" value="Enviar mensagem" class="formulario__enviar">
         </form>
-        <div>
-            <p>Desenvolvido por Fulana de Tal 2021</p>
-        </div>
+        <p class="rodape__creditos">Desenvolvido por Fulana de Tal 2021</p>
     </footer>
 
     <script src="js/index.js"></script>
