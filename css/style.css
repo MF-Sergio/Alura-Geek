@@ -1,0 +1,246 @@
+:root {
+    --main-azul: #2A7AE4;
+    --main-cinza: #464646;
+    --main-branco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*ESTILIZAÇÃO MOBILE(360px)*/
+
+/*Cabeçalho*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.444vw;
+    align-items: center;
+    background-color: var(--main-branco);
+}
+
+.cabecalho__logo-imagem {
+    vertical-align: middle;
+}
+
+.cabecalho__login {
+    color: var(--main-azul);
+    width: 133px;
+    height: 40px;
+    padding: 12px 47.5px;
+    font-size: 0.88em;
+    border: solid 1px var(--main-azul);
+}
+
+.cabecalho__pesquisa {
+    position: absolute;
+    z-index: -1;
+    left: 13%;
+    top: 0%;
+    opacity: 0%;
+    transition: z-index 0.1s, top 0.25s, opacity 0.6s;
+    font-size: 0.88em;
+    color: var(--main-cinza);
+    width: 272px;
+    height: 40px;
+    padding: 8px 16px;
+    background: #F5F5F5;
+    border-radius: 20px;
+}
+
+.cabecalho__pesquisa::placeholder {
+    color: #A2A2A2;
+}
+
+.cabecalho__pesquisa:focus {
+    outline: none;
+}
+
+.cabecalho__pesquisa--ativo {
+    z-index: 1;
+    opacity: 100%;
+    transition: z-index 0.5s, top 0.25s, opacity 0.6s;
+    left: 13%;
+    top: 11%;
+}
+
+.cabecalho__pesquisa::placeholder {
+    text-align: center;
+    color: #A2A2A2;
+    font-size: 0.88em;
+    padding-left: 10px;   
+}
+/***/
+
+/*Banner*/
+.banner {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 192px;
+    padding: 16px;
+    color: var(--main-branco);
+    font-size: 14px;
+}
+
+.banner__titulo {
+    font-size: 22px;
+}
+
+.banner__botao {
+    padding: 12px 16px;
+    width: fit-content;
+    background-color: var(--main-azul);
+}
+/***/
+
+/*Produtos*/
+.produtos {
+    padding: 1em;
+}
+
+.produtos__titulo {
+    display: inline;
+    color: var(--main-cinza);
+    font-weight: 700;
+    font-size: 1.34em;
+}
+
+.produtos__ver-tudo {
+    color: var(--main-azul);
+    font-weight: 700;
+    font-size: 0.87em;
+    margin-left: 45%;
+}
+
+.produtos__ver-tudo::after {
+    content: url(../img/seta.svg);
+    vertical-align: middle;
+    padding-left: 6px;
+}
+
+.produtos__lista {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.lista__item {
+    display: grid;
+    gap: 8px;
+}
+
+.item__titulo {
+    color: var(--main-cinza);
+    font-size: 0.87em;
+}
+
+.item__preco, .item__link {
+    font-weight: 700;
+    color: var(--main-cinza);
+}
+
+.item__link {
+    font-weight: 700;
+    color: var(--main-azul);
+    font-size: 0.87em;
+}
+/***/
+
+/*Rodapé*/
+.rodape {
+    background-color: #EAF2FD;
+    padding-top: 1em;
+}
+
+.rodape__logo {
+    display: block;
+    margin: auto;
+    width: 176px;
+    height: 50px;
+}
+
+.rodape__ajuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color: var(--main-cinza);
+    margin: 1em 0;
+}
+
+.rodape__formulario {
+    padding: 0 16px;
+}
+
+.formulario__titulo {
+    font-weight: 700;
+    color: var(--main-cinza);
+    margin-bottom: 0.5em;
+}
+
+.formulario__seu-nome {
+    margin-bottom: 1em;
+    background-color: var(--main-branco);
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #C8C8C8;
+}
+
+.formulario__seu-nome label {
+    font-size: 0.75em;
+    color: #A2A2A2;
+}
+
+.formulario__seu-nome input {
+    display: block;
+    width: 100%;
+    color: var(--main-cinza);
+}
+
+.formulario__seu-nome input:focus {
+    outline: none;
+}
+
+.formulario__mensagem {
+    color: var(--main-cinza);
+    width: 100%;
+    padding: 16px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #C8C8C8;
+    resize: none;
+}
+
+.formulario__mensagem::placeholder {
+    color: #A2A2A2;
+}
+
+.formulario__mensagem:focus {
+    outline: none;
+}
+
+.formulario__enviar {
+    color: var(--main-branco);
+    background-color: var(--main-azul);
+    padding: 12px 16px;
+}
+
+.rodape__creditos {
+    background-color: var(--main-branco);
+    padding: 32px 63px;
+    margin-top: 1em;
+    text-align: center;
+    color: var(--main-cinza);
+}
+
+/**********/
