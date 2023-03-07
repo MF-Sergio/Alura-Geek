@@ -43,7 +43,7 @@ body, input {
     left: 13%;
     top: 0%;
     opacity: 0%;
-    transition: z-index 0.1s, top 0.25s, opacity 0.6s;
+    transition: z-index 0.2s, top 0.25s, opacity 0.2s;
     font-size: 0.88em;
     color: var(--main-cinza);
     width: 272px;
@@ -51,6 +51,10 @@ body, input {
     padding: 8px 16px;
     background: #F5F5F5;
     border-radius: 20px;
+}
+
+.cabecalho__pesquisa--alternativo {
+    border: 1px solid var(--main-cinza);
 }
 
 .cabecalho__pesquisa::placeholder {
@@ -247,11 +251,7 @@ body, input {
 /***/
 
 /*Página de login*/
-.cabecalho__pesquisa--pagina-login {
-    border: 1px solid var(--main-cinza);
-}
-
-.login__formulario {
+.pagina-login__formulario {
     text-align: center;
     display: grid;
     gap: 1em;
@@ -259,13 +259,13 @@ body, input {
     padding: 97px 40px 76px 45px;
 }
 
-.login__titulo {
+.pagina-login__titulo {
     color: var(--main-cinza);
     font-weight: 700;
 }
 
 
-.login__email, .login__senha {
+.pagina-login__email, .login__senha {
     width: 275px;
     height: 41px;
     border-radius: 4px;
@@ -273,12 +273,12 @@ body, input {
     padding: 12px;
 }
 
-.login__email::placeholder, .login__senha::placeholder {
+.pagina-login__email::placeholder, .pagina-login__senha::placeholder {
     color: #A2A2A2;
     font-weight: 400;
 }
 
-.login__botao-entrar {
+.pagina-login__botao-entrar {
     background-color: var(--main-azul);
     color: var(--main-branco);
     width: 109px;
@@ -287,7 +287,7 @@ body, input {
 }
 /***/
 
-/*Página adm produtos*/
+/*Página administração de produtos*/
 
 
 /***/
