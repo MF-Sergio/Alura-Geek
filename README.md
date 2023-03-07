@@ -54,7 +54,7 @@
 
 ## Design do FIGMA
 
->
+>https://www.figma.com/file/fR9qvy3gU53s2q5efeMpy9/AluraGeek---Challenge?node-id=0%3A1
 
 <br>
 
