@@ -6,7 +6,6 @@
 </p>
 
 > Status do Projeto: :warning: Em Desenvolvimento
->>>>>>> pagina-principal
 
 ### Tópicos 
 
@@ -37,7 +36,6 @@
 ## Diário de desenvolvimento
 
  * <i>15/02/2023</i>: `(Página principal - mobile)` Todos os arquivos base(imagens,.html,.css,.js) adicionados ao projeto, estrutura básica da página criada, detalhes e classes adicionadas ao cabeçalho.
->>>>>>> pagina-principal
 <br>
   
   * <i>16/02/2023</i>: `(Página principal - mobile)` Estilização completa do cabeçalho da página utilizando flex container, criação da programação(JS) para mostrar e esconder o input de pesquisa da página(protótipo).
@@ -47,7 +45,7 @@
 <br>
 
   * <i>03/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento do rodapé e correções do mesmo no HTML, e estilização completa do rodapé. *Resolução do bug na barra de pesquisa da página*.
->>>>>>> pagina-principal
+
 ## Deploy da página :dash:
 
 >
