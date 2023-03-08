@@ -319,8 +319,32 @@ body, input {
 }
 
 .pagina-produtos__item {
+    position: relative;
     display: grid;
     gap: 0.5em;
+}
+
+.item__icones {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    left: 68px;
+    top: 8px;
+}
+
+.item__apagar, .item__editar {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item__apagar {
+    background-image: url(../img/apagar.svg);
+}
+
+.item__editar {
+    background-image: url(../img/editar.svg);
 }
 
 .item__codigo {
