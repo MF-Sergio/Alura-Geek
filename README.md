@@ -36,21 +36,18 @@
 ## Diário de desenvolvimento
 
  * <i>15/02/2023</i>: `(Página principal - mobile)` Todos os arquivos base(imagens,.html,.css,.js) adicionados ao projeto, estrutura básica da página criada, detalhes e classes adicionadas ao cabeçalho.
-<br>
   
   * <i>16/02/2023</i>: `(Página principal - mobile)` Estilização completa do cabeçalho da página utilizando flex container, criação da programação(JS) para mostrar e esconder o input de pesquisa da página(protótipo).
-<br>
 
   * <i>02/03/2023</i>: `(Página principal - mobile)` Organização e estruturação semântica de cada elemento das seções de produtos e do rodapé dentro do HTML e estilização das seções de "produtos" utilizando grid containers e espaçamentos padrões.
-<br>
 
   * <i>03/03/2023</i>: `(Página principal - mobile)` Organização e estruturação de cada elemento do rodapé e correções do mesmo no HTML, e estilização completa do rodapé. ***Resolução do bug na barra de pesquisa da página***.
-<br>
 
   * <i>07/03/2023</i>: `(Página de login - mobile / Página de produtos - mobile)` Criação e estilização completa da página de login e estruturação basica da página de produtos dentro do HTML.
-<br>
 
   * <i>08/03/2023</i>: `(Página de produtos - mobile)` Página de produtos completamente estruturada e estilizada.
+  
+  * <i>09/03/2023</i>: `(Página de adicionar produto - mobile / Página de descrição de produto - mobile)` Estruturação e estilização completa das páginas de adição de produto e de descrição de produto. ***CONCLUSÃO DA CRIAÇÃO DAS PÁGINAS EM RESOLUÇÃO MOBILE***
 
 ## Deploy da página :dash:
 
