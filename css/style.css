@@ -2,6 +2,7 @@
     --main-azul: #2A7AE4;
     --main-cinza: #464646;
     --main-branco: #FFFFFF;
+    --cinza-claro: #F5F5F5;
 }
 
 * {
@@ -28,7 +29,7 @@ body, input {
     vertical-align: middle;
 }
 
-.cabecalho__login {
+.cabecalho__botao-login {
     color: var(--main-azul);
     width: 133px;
     height: 40px;
@@ -49,7 +50,7 @@ body, input {
     width: 272px;
     height: 40px;
     padding: 8px 16px;
-    background: #F5F5F5;
+    background: var(--cinza-claro);
     border-radius: 20px;
 }
 
@@ -193,7 +194,7 @@ body, input {
     margin-bottom: 0.5em;
 }
 
-.formulario__seu-nome {
+.formulario__campo {
     margin-bottom: 1em;
     background-color: var(--main-branco);
     padding: 8px 12px;
@@ -201,18 +202,18 @@ body, input {
     box-shadow: 0 1px 0 0 #C8C8C8;
 }
 
-.formulario__seu-nome label {
+.formulario__campo label {
     font-size: 0.75em;
     color: #A2A2A2;
 }
 
-.formulario__seu-nome input {
+.formulario__campo input {
     display: block;
     width: 100%;
     color: var(--main-cinza);
 }
 
-.formulario__seu-nome input:focus {
+.formulario__campo input:focus {
     outline: none;
 }
 
@@ -255,7 +256,7 @@ body, input {
     text-align: center;
     display: grid;
     gap: 1em;
-    background-color: #F5F5F5;
+    background-color: var(--cinza-claro);
     padding: 97px 40px 76px 45px;
 }
 
@@ -308,7 +309,7 @@ body, input {
 }
 
 .pagina-produtos {
-    background-color: #F5F5F5;
+    background-color: var(--cinza-claro);
     padding: 2em;
 }
 
@@ -351,7 +352,31 @@ body, input {
     font-size: 0.87em;
     color: var(--main-cinza);
 }
-
 /***/
 
+/*Página adicionar produto*/
+.pagina-add-produto {
+    background-color: var(--cinza-claro);
+    padding: 1em;
+    font-weight: 400;
+}
+
+.cabecalho__botao-adm {
+    color: var(--main-azul);
+    width: 167px;
+    height: 40px;
+    padding: 12px 16px;
+    font-size: 0.88em;
+    border: solid 1px var(--main-azul);
+}
+
+.formulario__add {
+    color: var(--main-branco);
+    background-color: var(--main-azul);
+    padding: 16px 97.5px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/***/
 /**********/
