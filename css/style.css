@@ -377,6 +377,29 @@ body, input {
     width: 100%;
     font-weight: 400;
 }
-
 /***/
+
+/*Página descrição de produto*/
+.produto-descricao__corpo {
+    padding: 1em;
+}
+
+.descricao__titulo {
+    color: var(--main-cinza);
+    font-size: 1.37em;
+    margin-bottom: 0.5em;
+}
+
+.descricao__preco{
+    color: var(--main-cinza);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto{
+    font-size: 0.87em;
+    font-weight: 400;
+}
+/***/
+
 /**********/
