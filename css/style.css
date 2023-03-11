@@ -2,6 +2,7 @@
     --main-azul: #2A7AE4;
     --main-cinza: #464646;
     --main-branco: #FFFFFF;
+    --cinza-claro: #F5F5F5;
 }
 
 * {
@@ -17,6 +18,7 @@ body, input {
 
 /*Cabeçalho*/
 .cabecalho {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 4.444vw;
@@ -26,9 +28,10 @@ body, input {
 
 .cabecalho__logo-imagem {
     vertical-align: middle;
+    width: 27.7vw;
 }
 
-.cabecalho__login {
+.cabecalho__botao-login {
     color: var(--main-azul);
     width: 133px;
     height: 40px;
@@ -40,17 +43,21 @@ body, input {
 .cabecalho__pesquisa {
     position: absolute;
     z-index: -1;
-    left: 13%;
+    left: 18%;
     top: 0%;
     opacity: 0%;
-    transition: z-index 0.1s, top 0.25s, opacity 0.6s;
+    transition: z-index 0.2s, top 0.25s, opacity 0.2s;
     font-size: 0.88em;
     color: var(--main-cinza);
-    width: 272px;
+    width: 64%;
     height: 40px;
     padding: 8px 16px;
-    background: #F5F5F5;
+    background: var(--cinza-claro);
     border-radius: 20px;
+}
+
+.cabecalho__pesquisa--alternativo {
+    border: 1px solid var(--main-cinza);
 }
 
 .cabecalho__pesquisa::placeholder {
@@ -65,8 +72,8 @@ body, input {
     z-index: 1;
     opacity: 100%;
     transition: z-index 0.5s, top 0.25s, opacity 0.6s;
-    left: 13%;
-    top: 11%;
+    left: 18%;
+    top: 115%;
 }
 
 .cabecalho__pesquisa::placeholder {
@@ -74,6 +81,10 @@ body, input {
     color: #A2A2A2;
     font-size: 0.88em;
     padding-left: 10px;   
+}
+
+.cabecalho__lupa {
+    width: 6.6vw;
 }
 /***/
 
@@ -83,7 +94,7 @@ body, input {
     gap: 8px;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../img/banner.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../img/banner_mobile.jpg");
     background-size: cover;
     background-position: center;
     height: 192px;
@@ -189,7 +200,7 @@ body, input {
     margin-bottom: 0.5em;
 }
 
-.formulario__seu-nome {
+.formulario__campo {
     margin-bottom: 1em;
     background-color: var(--main-branco);
     padding: 8px 12px;
@@ -197,18 +208,18 @@ body, input {
     box-shadow: 0 1px 0 0 #C8C8C8;
 }
 
-.formulario__seu-nome label {
+.formulario__campo label {
     font-size: 0.75em;
     color: #A2A2A2;
 }
 
-.formulario__seu-nome input {
+.formulario__campo input {
     display: block;
     width: 100%;
     color: var(--main-cinza);
 }
 
-.formulario__seu-nome input:focus {
+.formulario__campo input:focus {
     outline: none;
 }
 
@@ -247,38 +258,33 @@ body, input {
 /***/
 
 /*Página de login*/
-.cabecalho__pesquisa--pagina-login {
-    border: 1px solid var(--main-cinza);
-}
-
-.login__formulario {
+.pagina-login__formulario {
     text-align: center;
     display: grid;
     gap: 1em;
-    background-color: #F5F5F5;
+    background-color: var(--cinza-claro);
     padding: 97px 40px 76px 45px;
 }
 
-.login__titulo {
+.pagina-login__titulo {
     color: var(--main-cinza);
     font-weight: 700;
 }
 
 
-.login__email, .login__senha {
-    width: 275px;
+.pagina-login__email, .pagina-login__senha {
     height: 41px;
     border-radius: 4px;
     box-shadow: 0 1px 0 0 #C8C8C8;
     padding: 12px;
 }
 
-.login__email::placeholder, .login__senha::placeholder {
+.pagina-login__email::placeholder, .pagina-login__senha::placeholder {
     color: #A2A2A2;
     font-weight: 400;
 }
 
-.login__botao-entrar {
+.pagina-login__botao-entrar {
     background-color: var(--main-azul);
     color: var(--main-branco);
     width: 109px;
@@ -287,9 +293,122 @@ body, input {
 }
 /***/
 
-/*Página adm produtos*/
+/*Página administração de produtos*/
+.pagina-produtos__titulo {
+    font-size: 1.37em;
+    font-weight: 700;
+    color: var(--main-cinza);
+}
 
+.pagina-produtos__adicionar {
+    display: inline-block;
+    width: 152px;
+    height: 40px;
+    padding: 12px 16px;
+    font-size: 0.87em;
+    background-color: var(--main-azul);
+    color: var(--main-branco);
+    line-height: 16px;
+    margin: 1rem 0;
+    font-weight: 600;
+}
 
+.pagina-produtos {
+    background-color: var(--cinza-claro);
+    padding: 2em;
+}
+
+.pagina-produtos__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.pagina-produtos__item {
+    position: relative;
+    display: grid;
+    gap: 0.5em;
+}
+
+.item__icones {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    left: 68px;
+    top: 8px;
+}
+
+.item__apagar, .item__editar {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item__apagar {
+    background-image: url(../img/apagar.svg);
+}
+
+.item__editar {
+    background-image: url(../img/editar.svg);
+}
+
+.item__codigo {
+    font-size: 0.87em;
+    color: var(--main-cinza);
+}
+/***/
+
+/*Página adicionar produto*/
+.pagina-add-produto {
+    background-color: var(--cinza-claro);
+    padding: 1em;
+    font-weight: 400;
+}
+
+.cabecalho__botao-adm {
+    color: var(--main-azul);
+    width: 167px;
+    height: 40px;
+    padding: 12px 16px;
+    font-size: 0.88em;
+    border: solid 1px var(--main-azul);
+}
+
+.formulario__add {
+    color: var(--main-branco);
+    background-color: var(--main-azul);
+    padding: 16px 97.5px;
+    width: 100%;
+    font-weight: 400;
+}
+/***/
+
+/*Página descrição de produto*/
+.produto-descricao__imagem {
+    width: 100%;
+}
+
+.produto-descricao__corpo {
+    padding: 1em;
+}
+
+.descricao__titulo {
+    color: var(--main-cinza);
+    font-size: 1.37em;
+    margin-bottom: 0.5em;
+}
+
+.descricao__preco{
+    color: var(--main-cinza);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto{
+    font-size: 0.87em;
+    font-weight: 400;
+}
 /***/
 
 /**********/

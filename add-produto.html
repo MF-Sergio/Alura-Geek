@@ -9,20 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Alura Geek - Login</title>
+    <title>Alura Geek - Adicionar produto</title>
 </head>
 <body>
     <header class="cabecalho">
         <a href="index.html" class="cabecalho__logo"><img src="img/logo.svg" alt="Logo da Alura Geek" class="cabecalho__logo-imagem"></a>
+        <a href="#" class="cabecalho__botao-adm">Menu administrador</a>
         <input type="search" class="cabecalho__pesquisa cabecalho__pesquisa--alternativo" placeholder="O que deseja encontrar?" data-pesquisa>
-        <img src="img/lupa.svg" alt="" class="cabecalho__lupa" data-lupa>
+        <img src="img/lupa.svg" alt="Ícone de lupa para abrir barra de pesquisa" class="cabecalho__lupa" data-lupa>
     </header>
-    <section class="pagina-login">
-        <form class="pagina-login__formulario">
-            <h1 class="pagina-login__titulo">Iniciar Sessão</h1>
-            <input type="email" class="pagina-login__email" placeholder="Escreva seu email">
-            <input type="password" class="pagina-login__senha" placeholder="Escreva sua senha">
-            <input type="submit" class="pagina-login__botao-entrar" value="Entrar">
+    <section class="pagina-add-produto">
+        <form class="add-produto__formulario">
+            <h3 class="formulario__titulo">Adicionar novo produto</h3>
+            <fieldset class="formulario__campo">
+                <label for="url">URL da imagem</label>
+                <input type="url" name="url">
+            </fieldset>
+            <fieldset class="formulario__campo">
+                <label for="categoria">Categoria</label>
+                <input type="text" name="categoria">
+            </fieldset>
+            <fieldset class="formulario__campo">
+                <label for="nome-produto">Nome do produto</label>
+                <input type="text" name="nome-produto">
+            </fieldset>
+            <fieldset class="formulario__campo">
+                <label for="preco">Preço do produto</label>
+                <input type="text" name="preco">
+            </fieldset>
+            <textarea placeholder="Descrição do produto" class="formulario__mensagem" rows="3"></textarea>
+            <input type="submit" value="Adicionar produto" class="formulario__add">
         </form>
     </section>
     <footer class="rodape">
