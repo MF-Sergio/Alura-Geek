@@ -155,6 +155,10 @@ body, input {
     gap: 8px;
 }
 
+.lista__item-desktop {
+    display: none;
+}
+
 .item__titulo {
     color: var(--main-cinza);
     font-size: 0.87em;
@@ -180,7 +184,7 @@ body, input {
 
 .rodape__logo {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     width: 176px;
     height: 50px;
 }
@@ -416,12 +420,17 @@ body, input {
     font-weight: 400;
 }
 /***/
+/**********/
 
 /*ESTILIZAÇÃO TABLET(768px)*/
 @media screen and (min-width: 768px) {
     /*Cabeçalho*/
     .cabecalho {
         gap: 32px;
+    }
+
+    .cabecalho__logo-imagem {
+        width: 13vw;
     }
     
     .cabecalho__pesquisa {
@@ -453,6 +462,7 @@ body, input {
     /*Banner*/
     .banner {
         height: 352px;
+        gap: 1em;
     }
 
     .banner__titulo {
@@ -493,20 +503,18 @@ body, input {
     /*Rodapé*/
     .rodape {
         display: grid;
-        grid-template-columns: auto auto;
         padding-top: 32px;
     }
 
     .rodape__logo {
         grid-column: 1;
-        margin: 0;
-        padding-left: 32px;
+        margin-left: 32px;
     }
 
     .rodape__ajuda {
         grid-column: 1;
         align-items: flex-start;
-        padding-left: 32px;
+        margin-left: 32px;
     }
 
     .rodape__formulario {
@@ -520,7 +528,103 @@ body, input {
         margin-top: 32px;
         padding: 32px 267px;
     }
+    /***/
 }
+/**********/
 
+/*ESTILIZAÇÃO DESKTOP(1440px)*/
+@media screen and (min-width: 1440px) {
+    /*Cabeçalho*/
+    .cabecalho {
+        padding: 32px 152px;
+        justify-content: flex-start;
+    }
 
+    .cabecalho__pesquisa {
+        width: 393px;
+        margin-right: 326px;
+    }
+
+    .cabecalho__botao-login {
+        width: 182px;
+        height: 51px;
+        font-size: 1em;
+        padding: 1em 70px;
+    }
+    /***/
+    
+    /*Banner*/
+    .banner {
+        padding: 32px 152px;
+    }
+    
+    .banner__titulo {
+        font-size: 3.25rem;
+    }
+
+    .banner__texto {
+        font-size: 1.37rem;
+    }
+
+    .banner__botao {
+        width: 130px;
+        height: 51px;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    /***/
+
+    /*Produtos*/
+    .produtos {
+        padding: 4em 152px 0;
+    }
+
+    .produtos__titulo {
+        font-size: 2em;
+    }
+
+    .produtos__lista{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .lista__item-desktop {
+        display: grid;
+    }
+    /***/
+
+    /*Rodapé*/
+    .rodape {
+        margin-top: 64px;
+        padding-top: 64px;
+    }
+
+    .rodape__logo {
+        margin-left: 152px;
+    }
+
+    .rodape__ajuda {
+        grid-column: 2;
+        margin: 0;
+        gap: 1.5em;
+    }
+
+    .rodape__formulario {
+        grid-column: 3;
+        padding: 0;
+        margin-right: 152px;
+    }
+
+    .formulario__enviar {
+        width: 165px;
+        height: 51px;
+    }
+
+    .rodape__creditos {
+        grid-column: span 3;
+        margin-top: 64px;
+        padding: 32px 603px;
+    }
+
+    /***/
+}
 /**********/
