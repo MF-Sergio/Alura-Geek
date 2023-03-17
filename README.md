@@ -24,7 +24,8 @@
 ## Descrição do projeto 
 
 <p align="justify">
-
+Projeto de um site completo sobre vendas de produtos relacionados a cultura pop e video games. Nele contém: uma página principal que possui um banner e 3 seções com produtos de categorias diferentes, uma página de login, uma página para administração dos produtos, uma página para adição e edição dos produtos e uma página com detalhes de um produto específico. <br>
+<strong>OBS: Não é possível fazer testes de aplicação de algumas funções por enquanto.</strong>
 </p>
 
 <br>
