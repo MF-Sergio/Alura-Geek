@@ -48,7 +48,11 @@
   * <i>08/03/2023</i>: `(Página de produtos - mobile)` Página de produtos completamente estruturada e estilizada.
   
   * <i>09/03/2023</i>: `(Página de adicionar produto - mobile / Página de descrição de produto - mobile)` Estruturação e estilização completa das páginas de adição de produto e de descrição de produto. ***CONCLUSÃO DA CRIAÇÃO DAS PÁGINAS EM RESOLUÇÃO MOBILE***
-
+  
+  * <i>015/03/2023</i>: `(Página principal - tablet/desktop)` Inicio da adptação na página principal as resoluções alternativas, de tablet e desktop. Obs: um pouco de dificuldade para adicionar um icone no input de search, mas resolução encontrada usando o background do placeholder.
+  
+  * <i>016/03/2023</i>: `(Página principal - tablet/desktop)` Adição de resoluções alternativas para as imagens presentes na página. Adaptação completa da página principal as resoluções de tablet(768px) e desktop(1440px) no CSS.
+  
 ## Deploy da página :dash:
 
 >
