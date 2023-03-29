@@ -7,6 +7,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all 500ms;
 }
 
 body, input {
@@ -283,10 +284,12 @@ body, input {
 
 
 .pagina-login__email, .pagina-login__senha {
+    width: 275px;
     height: 41px;
     border-radius: 4px;
     box-shadow: 0 1px 0 0 #C8C8C8;
     padding: 12px;
+    margin: 0 auto;
 }
 
 .pagina-login__email::placeholder, .pagina-login__senha::placeholder {
@@ -426,7 +429,9 @@ body, input {
 @media screen and (min-width: 768px) {
     /*Cabeçalho*/
     .cabecalho {
+        justify-content: unset;
         gap: 32px;
+        padding: 1em 2em;
     }
 
     .cabecalho__logo-imagem {
@@ -448,6 +453,10 @@ body, input {
         width: 100%;
         background: url(../img/lupa-cinza.svg) no-repeat;
         background-position: 100%;
+    }
+
+    .cabecalho__pesquisa--alternativo {
+        border: none;
     }
 
     .cabecalho__botao-login {
@@ -529,6 +538,22 @@ body, input {
         padding: 32px 267px;
     }
     /***/
+
+    /*Página de login*/
+    .pagina-login__formulario {
+        padding: 45px 32px 61px;
+    }
+    
+    .pagina-login__senha, .pagina-login__email {
+        
+    }
+    /***/
+
+    /*Página adicionar produtos*/
+    .pagina-add-produto {
+        padding: 32px;
+    }
+    /***/
 }
 /**********/
 
@@ -542,7 +567,7 @@ body, input {
 
     .cabecalho__pesquisa {
         width: 393px;
-        margin-right: 326px;
+        margin-right: 309px;
     }
 
     .cabecalho__botao-login {
@@ -556,6 +581,7 @@ body, input {
     /*Banner*/
     .banner {
         padding: 32px 152px;
+        margin-bottom: 64px;
     }
     
     .banner__titulo {
@@ -576,7 +602,8 @@ body, input {
 
     /*Produtos*/
     .produtos {
-        padding: 4em 152px 0;
+        padding: 0 152px;
+        margin-bottom: 64px;
     }
 
     .produtos__titulo {
@@ -594,7 +621,6 @@ body, input {
 
     /*Rodapé*/
     .rodape {
-        margin-top: 64px;
         padding-top: 64px;
     }
 
@@ -625,6 +651,17 @@ body, input {
         padding: 32px 603px;
     }
 
+    /***/
+
+    /*Página de login*/
+    .pagina-login__formulario {
+        padding: 93px 509px 91px 508px;
+    }
+
+    .pagina-login__email, .pagina-login__senha, .pagina-login__botao-entrar {
+        width: 423px;
+        height: 63px;
+    }
     /***/
 }
 /**********/
