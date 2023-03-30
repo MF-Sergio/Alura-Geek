@@ -341,13 +341,14 @@ body, input {
     position: relative;
     display: grid;
     gap: 0.5em;
+    width: auto;
 }
 
 .item__icones {
     display: flex;
     position: absolute;
     gap: 1em;
-    left: 68px;
+    left: 72px;
     top: 8px;
 }
 
@@ -548,6 +549,21 @@ body, input {
         
     }
     /***/
+    
+    /*Página administração de produtos*/
+    .pagina-produtos__titulo {
+        display: inline;
+        margin-right: 354px;
+    }
+    
+    .pagina-produtos__lista {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item__icones {
+        left: 95px;
+    }
+    /***/
 
     /*Página adicionar produtos*/
     .pagina-add-produto {
@@ -661,6 +677,62 @@ body, input {
     .pagina-login__email, .pagina-login__senha, .pagina-login__botao-entrar {
         width: 423px;
         height: 63px;
+    }
+    /***/
+
+    /*Página administração de produtos*/
+    .pagina-produtos {
+        padding: 64px 152px;
+    }
+    
+    .pagina-produtos__titulo {
+        display: inline;
+        font-size: 2em;
+        margin-right: 694px;
+    }
+
+    .pagina-produtos__adicionar {
+        width: 154px;
+        height: 51px;
+        padding: 10px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 31px;
+    }
+    
+    .pagina-produtos__lista {
+        grid-template-columns: repeat(6, 1fr);
+        row-gap: 4rem;
+    }
+
+    .item__icones {
+        left: 95px;
+    }
+    /***/
+    
+    /*Página de adicionar produto*/
+    .cabecalho__botao-adm {
+        width: 181px;
+        height: 51px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .pagina-add-produto {
+        padding: 64px 440.5px;
+    }
+
+    .formulario__titulo {
+        font-size: 2em;
+    }
+
+    .formulario__campo {
+        width: 559px;
+        height: 56px;
+    }
+
+    .formulario__mensagem {
+        width: 559px;
     }
     /***/
 }
