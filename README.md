@@ -15,8 +15,6 @@
 
 :small_blue_diamond: [Diário de desenvolvimento](#diário-de-desenvolvimento)
 
-:small_blue_diamond: [Deploy da página](#deploy-da-página-dash)
-
 :small_blue_diamond: [Créditos](#design-do-figma)
 
 <br>
@@ -53,10 +51,6 @@ Projeto de um site completo sobre vendas de produtos relacionados a cultura pop 
   * <i>15/03/2023</i>: `(Página principal - tablet/desktop)` Inicio da adptação na página principal as resoluções alternativas, de tablet e desktop. Obs: um pouco de dificuldade para adicionar um icone no input de search, mas resolução encontrada usando o background do placeholder.
   
   * <i>16/03/2023</i>: `(Página principal - tablet/desktop)` Adição de resoluções alternativas para as imagens presentes na página. Adaptação completa da página principal as resoluções de tablet(768px) e desktop(1440px) no CSS.
-  
-## Deploy da página :dash:
-
->https://mf-sergio.github.io/Alura-Challege/
 
 <br>
 
