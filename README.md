@@ -15,6 +15,8 @@
 
 :small_blue_diamond: [Diário de desenvolvimento](#diário-de-desenvolvimento)
 
+:small_blue_diamond: [Deploy da Página](#deploy-da-página-dash)
+
 :small_blue_diamond: [Créditos](#design-do-figma)
 
 <br>
@@ -57,6 +59,12 @@ Projeto de um site completo sobre vendas de produtos relacionados a cultura pop 
 ## Design do FIGMA
 
 >https://www.figma.com/file/fR9qvy3gU53s2q5efeMpy9/AluraGeek---Challenge?node-id=0%3A1
+
+<br>
+
+## Deploy da página :dash:
+
+> https://alura-geek-lyart.vercel.app
 
 <br>
 
